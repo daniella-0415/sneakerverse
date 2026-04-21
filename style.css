@@ -11,14 +11,16 @@ height: 45px;
 .banner{
     border-style:solid;
   border-color:yellow;
-  height:100vh;
+  min-height:100vh;
   gap:20px;
   display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
 }
 .box{
     border-style:solid;
     border-color:rgb(255, 102, 0);
-    height:55vh;
+    min-height:55vh;
     display: flex;
     flex-direction: column;
     gap:20px;
@@ -34,7 +36,7 @@ height: 45px;
     height:57vh;
     display: flex;
     flex-direction: column;
-  flex-wrap: nowrap;
+ flex-wrap: nowrap;
     flex: 1;
     padding-top: 20px;
 
@@ -48,7 +50,7 @@ height: 45px;
    display: flex;
    flex-direction: row;
     gap: 10%;
-    flex: 1;
+    flex: 1 1 100%;
     top: 30px;
 
 }
@@ -103,3 +105,5 @@ height: 45px;
     flex: 1;
     
 }
+
+
