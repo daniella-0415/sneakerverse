@@ -36,6 +36,7 @@ height: 45px;
     flex-direction: column;
   flex-wrap: nowrap;
     flex: 1;
+    gap:20px;
     padding-top: 20px;
 
 }
