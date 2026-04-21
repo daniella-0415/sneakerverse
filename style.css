@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.nav{
+background-color: rgb(165, 219, 17);
+height: 45px;
+
+}
+.banner{
+    border-style:solid;
+  border-color:yellow;
+  height:100vh;
+  gap:20px;
+  display: flex;
+}
+.box{
+    border-style:solid;
+    border-color:rgb(255, 102, 0);
+    height:55vh;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    display: flex;
+    flex: 1;
+    align-items: flex-end;
+
+}
+
+.box2{
+    border-style:solid;
+    border-color:rgb(0, 60, 255);
+    height:57vh;
+    display: flex;
+    flex-direction: column;
+  flex-wrap: nowrap;
+    flex: 1;
+    padding-top: 20px;
+
+}
+
+.left-side{
+    border-style:solid;
+    border-color:rgb(255, 0, 255);
+    height:95vh;
+    width: 50vw;
+   display: flex;
+   flex-direction: row;
+    gap: 10%;
+    flex: 1;
+    top: 30px;
+
+}
+/* .rith-side{
+    border-style:solid;
+    border-color:rgb(157, 255, 0);
+    height:65vh; 
+    width: 50vw;
+} */
+
+
+.shoes{
+    border-style:solid;
+    border-color:rgb(255, 0, 234);
+    height: 300%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 25%;
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+}
+.products{
+    border-style:solid;
+    border-color:rgb(255, 208, 0);
+    height: 40vh;
+    width: 25vw;
+    align-items: center;
+    /* flex: 1; */
+}
+.img1{
+    border-style:solid;
+    border-color:rgb(145, 255, 0);
+    height: 15vh; 
+    flex: 1;  
+    gap: 20%;
+}
+
+.footer{
+    border-style:solid;
+    border-color:rgb(255, 208, 0);
+    height: 50vh;
+    display: flex;
+    gap: 20px;
+    position:relative;
+    top: 30px;
+}
+.footer-section{
+    border-style:solid;
+    border-color:rgb(0, 255, 179);
+    height: 40vh;
+    flex: 1;
+    
+}
