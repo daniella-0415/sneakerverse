@@ -3,17 +3,23 @@
     margin: 0;
     padding: 0;
 }
+body{
+    
+    background-image: url(images\bannerimg12.avif);
+}
+
 .nav{
 background-color: rgb(165, 219, 17);
 height: 45px;
 
 }
 .banner{
-    border-style:solid;
+ border-style:solid;
   border-color:yellow;
   height:100vh;
   gap:20px;
   display: flex;
+
 }
 
 .banner1{
@@ -22,8 +28,52 @@ height: 45px;
     height:80vh;
     gap:20px;
     display: flex;
+    flex:1;
+    background-image: url(images/bannerimg12.avif);
+    background-size: cover;
+    background-position: center;
+    /* width: 100%;
+    height: 100%;  */
 }
-.box{
+
+
+.heading h1{
+  z-index: 1;
+  /* margin-top: 17.6%;  */
+  font-size: 60px;
+  font-weight: 200px;
+  padding-top: 85%;
+  padding-left: 20px;
+  /* line-height: 110%; */
+  /* display: flex;
+ justify-content: center; */
+  color:white;
+
+}
+
+.btn button{
+    margin:85px;
+    align-items: end;
+    position: relative;
+    top:80%;
+    left:55%;
+    background-color: transparent;
+    border: 0px;
+    /* display: flex;
+    justify-content:space-between; */
+}
+
+.heading:hover{
+    color:blue;
+}
+
+.btn p:hover{
+    text-decoration: underline;
+    color:white;
+}
+
+
+.box6, .box5, .box4{
     border-style:solid;
     border-color:rgb(255, 102, 0);
     height:55vh;
@@ -36,7 +86,7 @@ height: 45px;
 
 }
 
-.box2{
+.box2, .box1, .box3{
     border-style:solid;
     border-color:rgb(0, 60, 255);
     height:57vh;
@@ -45,10 +95,12 @@ height: 45px;
   flex-wrap: nowrap;
     flex: 1;
     gap:20px;
-    padding-top: 20px;
+    /* padding-top: 20px; */
 
 }
-.left-side-container{
+
+
+.side-container{
     border-style:solid;
     border-color:rgb(255, 0, 128);
     height:70vh;
@@ -57,7 +109,7 @@ height: 45px;
     justify-content: center;
 }
 
-.left-side{
+.left-side, .right-side{
     border-style:solid;
     border-color:rgb(255, 0, 255);
     height:66vh;
@@ -70,6 +122,20 @@ height: 45px;
     /* top: 30px; */
 
 }
+
+/* .right-side{
+    border-style:solid;
+    border-color:rgb(255, 0, 255);
+    height:66vh;
+    width: 40vw;
+   display: flex;
+   flex-direction: row;
+   justify-content: center; */
+    /* gap: 10%; */
+    /* flex: 1; */
+    /* top: 30px; */
+
+/* } */
 /* .rith-side{
     border-style:solid;
     border-color:rgb(157, 255, 0);
