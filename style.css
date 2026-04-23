@@ -196,7 +196,7 @@ z-index: 1;
 }
 
 
-.box6, .box5, .box4{
+.box6, .box5, .box4, .box7{
     border-style:solid;
     border-color:rgb(255, 102, 0);
     height:55vh;
@@ -314,3 +314,37 @@ z-index: 1;
     
 }
 
+@media (max-width: 768px) {
+    
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner1{
+        height:50vh;
+        gap:20px;
+        display: flex;
+    }
+    .left-side-container{
+        height:35vh;
+        justify-content: center;
+        flex-direction: column; 
+
+    }
+
+    .left-side , .right-side {
+        flex-direction: column; 
+        height: 27vh;
+        justify-content: center;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .products {
+        flex-direction: column;
+        height: 30vh;
+        width: 45vw;
+    }
+}
