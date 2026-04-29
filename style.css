@@ -351,42 +351,54 @@ background-color:whitesmoke;
     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 
+.promo-video{
+  width: 100%;
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
 
-.shoes{
-    /* border-style:solid;
-    border-color:rgb(255, 0, 234); */
-    height: 300%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: 25%;
-    width: 100%;
-    gap: 20px;
-    justify-content: center;
-    padding-top: 60px; 
-    
+.promo video{
+  width: 100%;
+  height: 35%;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
-.products{
-    /* border-style:solid;
-    border-color:rgb(255, 208, 0); */
-    height: 40vh;
-    width: 25vw;
-    align-items: center;
-    
-    /* flex: 1; */
+
+.shoes {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+  justify-content: center;
+  padding-top: 60px;
 }
-.products img{
-  /* position: fixed; */
+.shoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+
+.products {
+  flex: 1 1 250px;
+  max-width: 300px;
+  aspect-ratio: 1 / 1;
+  overflow: hidden; 
+  display: flex;
+}
+
+
+.products img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  top: 0;
-  left: 0;
-  /* height: 10%;
-  width: 25vw; */
-  /* position:fixed; */
-  flex:1;
-    
 }
+
 .img1{
     /* border-style:solid;
     border-color:rgb(145, 255, 0); */
@@ -485,7 +497,7 @@ background-color:whitesmoke;
   background: black;
   color: white;
   width: 30%;
-  height: 5vh;
+  height: 4vh;
   /* padding: 8px 12px; */
   border-radius: 3px;
   cursor: pointer;
@@ -573,17 +585,40 @@ products-header {
   text-decoration: none;
 }
 /* login */
-.c{
-  width: 35%;
-  height:80vh;
-  position: absolute;
-  left: 30%;
-  top: 10%;
-  overflow-y: hidden;
-  border: 5px solid #0c0c0c;
-  background-color: #0c0c0c;
-  border-radius: 10px;
-  
+.c {
+  background-color: #0d0d0e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120vh;
+   margin: 0;
+}
+.h2{
+  color: #ccc;
+}
+
+.login-form {
+  background: black;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  width: 140%;
+  max-width: 350px;
+  height: 70%;
+  text-align: center;
+   }
+
+input-box {
+ width: 100%;
+ padding: 12px;
+ margin: 10px 0;
+ border: 1px solid #ccc;
+ border-radius: 10px;
+ box-sizing: border-box;
+       
+}
+.n{
+  color: rgb(12, 12, 12);
 }
 .l{
   color: white;
@@ -591,39 +626,40 @@ products-header {
 .p{
   color: white;
 }
-.login-form{
-  background: #111111;
-  padding: 30px;
-  border-radius: 10px;
-  height: 20%;
-
+.v{
+  color: white;
+}
+.u{
+  color: white;
+}
+.n {
+ display: block;
+ width: 100%;
+ padding: 12px;
+ margin-top: 10px;
+ background-color:black;
+ color: white;
+ text-decoration: none;
+ border-radius: 4px;
+ font-weight: bold;
+ /* box-sizing: border-box; */
+}
+.n:hover{
+  background: #00c6ff;
 }
 
-.login-form h2{
+.register-link{
   text-align: center;
-  margin-bottom: 20px;
+  margin-top: 15%;
 }
 
-.input-box{
-  position: relative;
-  margin-bottom: 25px;
+.register-link a{
+  color: #4facfe;
+  text-decoration: none;
 }
 
-.input-box input{
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-bottom: 2px solid #ccc;
-  outline: none;
-  font-size: 16px;
-}
-
-.input-box label{
-  position: absolute;
-  top: 10px;
-  left: 0;
-  color: #999;
-  transition: 0.3s;
+.register-link a:hover{
+  text-decoration: underline;
 }
 
 .social-icons a:hover {
@@ -674,37 +710,21 @@ products-header {
   border: none;
   background-color: #111;
 }
+
+
+/* TABLET */
 @media (max-width: 768px) {
-    
-    .banner {
-        flex-direction: column;
-    }
-
-    .banner1{
-        height:50vh;
-        gap:20px;
-        display: flex;
-    }
-    .left-side-container{
-        height:35vh;
-        justify-content: center;
-        flex-direction: column; 
-
-    }
-
-    .left-side , .right-side {
-        flex-direction: column; 
-        height: 27vh;
-        justify-content: center;
-    }
-
-    .footer {
-        flex-direction: column;
-    }
-
-    .products {
-        flex-direction: column;
-        height: 30vh;
-        width: 45vw;
-    }
+  .products {
+    flex: 1 1 45%; /* 2 per row */
+    max-width: 45%;
+  }
 }
+
+/* MOBILE */
+@media (max-width: 480px) {
+  .products {
+    flex: 1 1 100%; /* 1 per row */
+    max-width: 100%;
+  }
+}
+
