@@ -294,7 +294,17 @@ z-index: 1;
     flex: 1;  
     gap: 20%;
 }
-
+.products:hover{
+  animation: zoom-in 0.3s forwards;
+}
+@keyframes zoom-in{
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(1.1);
+  }
+}
 /* all .products */
 
 .filters {
@@ -409,4 +419,99 @@ products-header {
     flex: 1;
     
 }
+/* login */
+.c{
+  width: 35%;
+  height:80vh;
+  position: absolute;
+  left: 30%;
+  top: 10%;
+  overflow-y: hidden;
+  border: 5px solid #0c0c0c;
+  background-color: #0c0c0c;
+  border-radius: 10px;
+  
+}
+.l{
+  color: white;
+}
+.p{
+  color: white;
+}
+.login-form{
+  background: #111111;
+  padding: 30px;
+  border-radius: 10px;
+  height: 20%;
 
+}
+
+.login-form h2{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-box{
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input-box input{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  font-size: 16px;
+}
+
+.input-box label{
+  position: absolute;
+  top: 10px;
+  left: 0;
+  color: #999;
+  transition: 0.3s;
+}
+
+
+.n{
+  width: 100%;
+  padding: 10px;
+  background: #0c0c0c;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.n:hover{
+  background: #00c6ff;
+}
+
+.register-link{
+  text-align: center;
+  margin-top: 15px;
+}
+
+.register-link a{
+  color: #4facfe;
+  text-decoration: none;
+}
+
+.register-link a:hover{
+  text-decoration: underline;
+  color: #f0f0f0;
+}
+
+
+@media (max-width: 480px){
+  .login-form{
+      padding: 20px;
+  }
+
+  .login-form h2{
+      font-size: 1.3rem;
+  }
+}
