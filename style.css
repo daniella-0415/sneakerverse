@@ -28,7 +28,7 @@ z-index: 1;
     top: 0;
     overflow: hidden;
     z-index: 1;
-    color:white;
+    color:rgb(12, 2, 2);
   }
   
   
@@ -99,7 +99,7 @@ z-index: 1;
   }
   
   .dropdown {
-    position: absolute;
+    position: fixed;
     top: 40px;
     right: 0;
     background: white;
@@ -385,9 +385,7 @@ background-color:whitesmoke;
   width: 25vw; */
   /* position:fixed; */
   flex:1;
-    /* background-image: url(images/bannerimg12.avif); */
-    /* background-size: cover;
-    background-position: center; */
+    
 }
 .img1{
     /* border-style:solid;
@@ -396,7 +394,115 @@ background-color:whitesmoke;
     flex: 1;  
     gap: 20%;
 }
+.products:hover{
+  animation: zoom-in 0.3s forwards;
+}
+@keyframes zoom-in{
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(1.1);
+  }
+}
+/* all .products */
 
+.filters {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+/* justify-content: center; */
+  height: fit-content;
+}
+
+.header-controls{
+  position: absolute;
+  top: 7%;
+  border: 0px;
+  
+}
+.filter-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+.sizes span {
+  /* display: inline-block; */
+  border: 1px solid #ccc;
+  padding: 5px 8px;
+  margin: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.colors span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+.black{
+  background: black; 
+}
+
+.white {
+  background: white;
+ }
+.green { 
+  background: green; 
+}
+.red { 
+  background: red; 
+}
+
+.yellow { 
+  background: yellow;
+ }
+.blue { 
+  background: blue;
+ }
+
+
+ .apply {
+  width: 100%;
+  padding: 10px;
+  background: rgb(11, 11, 177);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  position: relative;
+  top: 70%;
+  right: 470%;
+}
+
+.add {
+  background: black;
+  color: white;
+  width: 30%;
+  height: 5vh;
+  /* padding: 8px 12px; */
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* .header-controls {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  } */
 .footer{
     display: flex;
   flex-flow: row wrap;
@@ -465,6 +571,59 @@ background-color:whitesmoke;
   color: #bbb;
   margin-bottom: 8px;
   text-decoration: none;
+}
+/* login */
+.c{
+  width: 35%;
+  height:80vh;
+  position: absolute;
+  left: 30%;
+  top: 10%;
+  overflow-y: hidden;
+  border: 5px solid #0c0c0c;
+  background-color: #0c0c0c;
+  border-radius: 10px;
+  
+}
+.l{
+  color: white;
+}
+.p{
+  color: white;
+}
+.login-form{
+  background: #111111;
+  padding: 30px;
+  border-radius: 10px;
+  height: 20%;
+
+}
+
+.login-form h2{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-box{
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input-box input{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  font-size: 16px;
+}
+
+.input-box label{
+  position: absolute;
+  top: 10px;
+  left: 0;
+  color: #999;
+  transition: 0.3s;
 }
 
 .social-icons a:hover {
