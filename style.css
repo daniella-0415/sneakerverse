@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font: garamond;
+    font:ga
 
 }
 .nav{
@@ -204,6 +204,8 @@ background-color:whitesmoke;
   font-size:300%;
   padding-top: 3%;
   font-weight: 100;
+  display:flex;
+  justify-content: center;
 
 }
 
@@ -267,14 +269,14 @@ background-color:whitesmoke;
     display: flex;
     /* flex: 1; */
     /* width: 100%; */
-    /* align-items: flex-end;  */
+    /* align-items: reverse-end;  */
 
 }
 
 .text{
   color:black;
   display: flex;
-  justify-content: center;
+  justify-content: left;
 }
 
 .box2, .box1, .box3{
@@ -289,11 +291,31 @@ background-color:whitesmoke;
    
 }
 
+.Mbanner {
+  display:flex;
+  justify-content: center;
+ padding-bottom: 20px;
+}
+
+.Mbanner button{
+   background-color: #111;
+   color: #f8f8f8;
+   width:15%;
+   border-radius: 8px;
+}
+
 
 .Ctext{
   display: flex;
   justify-content: center;
   font-size: larger;
+  color: #111;
+
+}
+
+.Ctext a{
+  text-decoration: none;
+  color:black;
 }
 
 .Ctext:hover{
@@ -329,6 +351,7 @@ background-color:whitesmoke;
     align-items: center;
     padding: 60px;
     background: #f8f8f8;
+    border-radius: 10px;
 }
 
 .right-side p{
@@ -482,18 +505,6 @@ background-color:whitesmoke;
   cursor: pointer;
 }
 
-products-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  /* .header-controls {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-  } */
 .footer{
     display: flex;
   flex-flow: row wrap;
