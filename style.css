@@ -424,10 +424,7 @@ background-color:whitesmoke;
 /* 
 .footer-container {
   display: flex;
-  justify-content: space-between;
-  flex-wrap:  nowrap;
-  gap: 30px;
-} */
+  
 
 /* Columns */
 .footer-section {
