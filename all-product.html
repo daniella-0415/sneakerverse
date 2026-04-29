@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>product</title>
 </head>
 <body>
     <section class="nav-bar">
@@ -25,7 +25,7 @@
                     <li><a href="women.html">Women</a></li>
                     <li><a href="kid.html">Kids</a></li>
                 </ul>
-            
+                    
                 
                 <div class="search-bar">
                   <input type="text" placeholder="Search..." />
@@ -44,8 +44,8 @@
                   <div class="profile">
                     <button class="profile-btn"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M11.98 20v-1h6.405q.23 0 .423-.192t.192-.424V5.616q0-.231-.192-.424T18.384 5h-6.403V4h6.404q.69 0 1.152.463T20 5.616v12.769q0 .69-.463 1.153T18.385 20zm-.71-4.461l-.703-.72l2.32-2.319H4.019v-1h8.868l-2.32-2.32l.702-.718L14.808 12z"/></svg></button>
                     <div class="dropdown">
-                      <a href="#">Login</a>
-                      <a href="#">Sign Up</a>
+                        <a href="login.html">Login</a>
+                      <a href="signIn.html">Sign Up</a>
                     </div>
                   </div>
             
@@ -58,76 +58,89 @@
             
               </nav>
         </div>
-        
-    </section>
-    <div class="products-header">
-        <h2>All Products</h2>
-  
-        <div class="header-controls">
-          <span>100 Products</span>
-          <select>
-            <option>Sort by</option>
-            <option>Price Low - High</option>
-            <option>Price High - Low</option>
-          </select>
-          </div>
-    <div class="filters">
-
-         <section class="footer">
-             <div class="filter">
-                <div class="filter-group">
-                    <h4>Brand</h4>
-                    <label><input type="checkbox"> Nike</label>
-                    <label><input type="checkbox"> Adidas</label>
-                    <label><input type="checkbox"> Puma</label>
-                    <label><input type="checkbox"> New Balance</label>
-                  </div>
-             </div>
-             <div class="filter">
-                <div class="filter-group">
-                    <h4>Category</h4>
-                    <label><input type="checkbox"> Running</label>
-                    <label><input type="checkbox"> Casual</label>
-                    <label><input type="checkbox"> Athletic</label>
-                    <label><input type="checkbox"> Formal</label>
-                  </div>
-             </div>
-             <div class="filter">
-                <div class="filter-group">
-                    <h4>Sizes</h4>
-                    <div class="sizes">
-                      <span>7</span><span>7.5</span><span>8</span>
-                      <span>8.5</span><span>9</span><span>10</span>
-                    </div>
-                  </div>
+          <div>
+                   <section class="promo-video">
+    <video autoplay muted loop >
+        <source src="images\Superstar ｜ adidas Originals.mp4" type="video/mp4">
+    
+    </video>
+</section>
+                </div>
+         
+        <section class="products-header">
+            <h2>All Products</h2>
+            <div class="header-filter">
+              <span>100 Products</span>
               
-             </div>
-             <div class="filter">
-                <div class="filter-group">
-                    <h4>Colors</h4>
-                    <div class="colors">
-                      <span class="black"></span>
-                      <span class="white"></span>
-                      <span class="green"></span>
-                      <span class="red"></span>
-                      <span class="yellow"></span>
-                      <span class="blue"></span>
+              <!-- <select>
+                <option>Sort by</option>
+                <option>Price Low - High</option>
+                <option>Price High - Low</option>
+              </select> -->
+          
+              
+              <details>
+                <summary>Filter</summary>
+                
+                <div class="filters">
+                  <section class="footer">
+                    <div class="filter">
+                      <div class="filter-group">
+                        <h4>Brand</h4>
+                        <label><input type="checkbox"> Nike</label>
+                        <label><input type="checkbox"> Adidas</label>
+                        <label><input type="checkbox"> Puma</label>
+                        <label><input type="checkbox"> New Balance</label>
+                      </div>
                     </div>
-                  </div>
-             </div>
-             <div class="filter">price
-                <div class="filter-group">
-                    <h4>Price</h4>
-                    <input type="range" min="0" max="3000">
-                    <p>R0 - R3000</p>
-                  </div>
-             </div>
-             <div class="b">
-                <button class="apply">Apply Filters</button>
-
-             </div>
+                    
+                    <div class="filter">
+                      <div class="filter-group">
+                        <h4>Category</h4>
+                        <label><input type="checkbox"> Running</label>
+                        <label><input type="checkbox"> Casual</label>
+                        <label><input type="checkbox"> Athletic</label>
+                        <label><input type="checkbox"> Formal</label>
+                      </div>
+                    </div>
+          
+                    <div class="filter">
+                      <div class="filter-group">
+                        <h4>Sizes</h4>
+                        <div class="sizes">
+                          <span>7</span><span>7.5</span><span>8</span><span>8.5</span><span>9</span><span>10</span>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="filter">
+                      <div class="filter-group">
+                        <h4>Colors</h4>
+                        <div class="colors">
+                          <span class="black"></span><span class="white"></span><span class="green"></span><span class="red"></span><span class="yellow"></span><span class="blue"></span>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="filter">
+                      <div class="filter-group">
+                        <h4>Price</h4>
+                        <input type="range" min="0" max="3000">
+                        <p>R0 - R3000</p>
+                      </div>
+                    </div>
+          
+                    <div class="b">
+                      <button class="apply">Apply Filters</button>
+                    </div>
+                  </section>
+                </div>
+              </details>
+              
+          
             </div>
-        </section>
+          </section>
+          
         <section class="shoes">
             <div>
          <div class="products">
@@ -143,20 +156,20 @@
          <div>
              <div class="products"><img src="images/img17.avif" alt=""></div>
                  <div class="img1">
-                    <h3>Nike P-6000</h3>
+                    <h3>Mens Hi-tec</h3>
                     <h4>R4,199.00 </h4>
                 <button class="add">Add to Cart</button>
                  </div>
              </div> 
              
-         
+        
              <div>
                  <div class="products">
                     <img src="images/Cimg3.avif" alt="">
 
                  </div>
                      <div class="img1">
-                        <h3>Nike P-6000</h3>
+                        <h3>adidas Originals</h3>
                         <h4>R2,199.00 </h4>
                         <button class="add">Add to Cart</button>
                      </div>
@@ -168,7 +181,7 @@
                         <img src="images/Wimg2.avif" alt="">
                      </div>
                          <div class="img1">
-                            <h3>Nike P-6000</h3>
+                            <h3>Suede XL</h3>
                             <h4>R7,199.00 </h4>
                             <button class="add">Add to Cart</button>
                          </div>
@@ -237,7 +250,7 @@
          
              <div>
                  <div class="products">
-                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,w_600,b_rgb:FAFAFA/global/309140/02/sv01/fnd/ZAF/fmt/png" alt="">
+                    <img src="images/img13.avif" alt="">
                  </div>
                      <div class="img1">
                         <h3>PUMA x ASTON MARTIN</h3>
