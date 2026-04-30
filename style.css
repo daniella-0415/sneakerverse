@@ -800,20 +800,20 @@ input-box {
 }
 
 
-/* TABLET */
+
 @media (max-width: 768px) {
   .products {
     flex: 1 1 45%;
-    /* 2 per row */
+   
     max-width: 45%;
   }
 }
 
-/* MOBILE */
 @media (max-width: 480px) {
   .products {
-    flex: 1 1 100%;
-    /* 1 per row */
-    max-width: 100%;
+    
+    flex: 1 1 45%;
+   
+    max-width: 45%;
   }
 }
