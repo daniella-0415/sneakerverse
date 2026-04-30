@@ -490,92 +490,98 @@ background-color:whitesmoke;
 
 /* all .products */
 
-.filters {
-  flex: 1;
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  display: flex;
-  /* justify-content: center; */
-  height: fit-content;
-}
-
 .w {
-  background-color: blue;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  background-color:white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: #111;
 }
 
+
+.filters {
+  color: var(--text-light);
+  width: 100%; 
+  box-sizing: border-box; 
+}
 .header-controls {
   position: absolute;
   top: 7%;
-  border: 0px;
+  border: 0;
+}
 
+.filter-group {
+  margin-bottom: 15px;
 }
 
 .filter-group label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 0.9rem;
 }
 
+
 .sizes span {
-  /* display: inline-block; */
-  border: 1px solid #ccc;
-  padding: 5px 8px;
-  margin: 3px;
+  display: inline-block;
+  border: 1px solid var(--border-color);
+  padding: 6px 12px;
+  margin: 0 5px 5px 0;
   border-radius: 5px;
   cursor: pointer;
+  transition: all 0.2s;
 }
+
+.sizes span:hover {
+  background-color: #333;
+}
+
 
 .colors span {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
-  margin: 5px;
+  margin: 0 5px 5px 0;
   cursor: pointer;
-  border: 1px solid #ccc;
+  border: 2px solid transparent; 
+  transition: transform 0.2s;
 }
 
-.black {
-  background: black;
+.colors span:hover {
+  transform: scale(1.1);
 }
 
-.white {
-  background: white;
-}
 
-.green {
-  background: green;
-}
+.black { background: black; border: 1px solid #444; }
+.white { background: white; }
+.green { background: green; }
+.red { background: red; }
+.yellow { background: yellow; }
+.blue { background: blue; }
 
-.red {
-  background: red;
-}
 
-.yellow {
-  background: yellow;
-}
-
-.blue {
-  background: blue;
+.b {
+  padding-top: 20px; 
 }
 
 
 .apply {
   width: 100%;
-  padding: 10px;
-  background: rgb(11, 11, 177);
-  color: white;
+  padding: 12px;
+  background: blue;
+  color: rgb(5, 5, 5);
   border: none;
-  border-radius: 3px;
+  border-radius: 4px;
   cursor: pointer;
-  position: relative;
-  top: 70%;
-  right: 470%;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 20px;
+ 
 }
 
+.apply:hover {
+  background:white;
+}
 .add {
   background: black;
   color: white;
