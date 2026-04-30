@@ -1,222 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"href="style.css">
-   <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://googleapis.com" rel="stylesheet">
 
     <title>SNEAKERVERS</title>
 </head>
+
 <body>
     <section class="nav-bar">
         <div class="nav">
             <nav class="navbar">
-    
-   
+
+
                 <div class="logo">
-                  <img src="images\STAR ☆.jpg" width="90" height="90">
+                    <img src="images\STAR ☆.jpg" width="90" height="90">
                 </div>
-            
-               
+
+
                 <ul class="nav-links">
-                    
+
                     <li><a href="index.html">Home</a></li>
                     <li><a href="all-product.html">All product</a></li>
                     <li><a href="men.html">Men</a></li>
                     <li><a href="women.html">Women</a></li>
                     <li><a href="kid.html">Kids</a></li>
                 </ul>
-            
-                
+
+
                 <div class="search-bar">
-                  <input type="text" placeholder="Search..." />
-                  <button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M9.539 15.23q-2.398 0-4.065-1.666Q3.808 11.899 3.808 9.5t1.666-4.065T9.539 3.77t4.064 1.666T15.269 9.5q0 1.042-.369 2.017t-.97 1.668l5.909 5.907q.14.14.15.345q.009.203-.15.363q-.16.16-.354.16t-.354-.16l-5.908-5.908q-.75.639-1.725.989t-1.96.35m0-1q1.99 0 3.361-1.37q1.37-1.37 1.37-3.361T12.9 6.14T9.54 4.77q-1.991 0-3.361 1.37T4.808 9.5t1.37 3.36t3.36 1.37"/></svg></button>
+                    <input type="text" placeholder="Search..." />
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M9.539 15.23q-2.398 0-4.065-1.666Q3.808 11.899 3.808 9.5t1.666-4.065T9.539 3.77t4.064 1.666T15.269 9.5q0 1.042-.369 2.017t-.97 1.668l5.909 5.907q.14.14.15.345q.009.203-.15.363q-.16.16-.354.16t-.354-.16l-5.908-5.908q-.75.639-1.725.989t-1.96.35m0-1q1.99 0 3.361-1.37q1.37-1.37 1.37-3.361T12.9 6.14T9.54 4.77q-1.991 0-3.361 1.37T4.808 9.5t1.37 3.36t3.36 1.37" />
+                        </svg></button>
                 </div>
-            
-                
+
+
                 <div class="icons">
-                  
-                  
-                  <button class="mode-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20"><path fill="currentColor" d="M13 3H7a7 7 0 1 0 0 14h6a7 7 0 1 0 0-14m0 12a5 5 0 1 1 .001-10.001A5 5 0 0 1 13 15"/></svg></button>
-            
-                 
-                  <div class="profile">
-                   <a href="signIn.html"> <button class="profile-btn"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M11.98 20v-1h6.405q.23 0 .423-.192t.192-.424V5.616q0-.231-.192-.424T18.384 5h-6.403V4h6.404q.69 0 1.152.463T20 5.616v12.769q0 .69-.463 1.153T18.385 20zm-.71-4.461l-.703-.72l2.32-2.319H4.019v-1h8.868l-2.32-2.32l.702-.718L14.808 12z"/></svg></button></a>
-                    <div class="dropdown">
-                        <a href="login.html">Login</a>
-                      <a href="#">Sign Up</a>
+
+
+                    <button class="mode-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            viewBox="0 0 20 20">
+                            <path fill="currentColor"
+                                d="M13 3H7a7 7 0 1 0 0 14h6a7 7 0 1 0 0-14m0 12a5 5 0 1 1 .001-10.001A5 5 0 0 1 13 15" />
+                        </svg></button>
+
+
+                    <div class="profile">
+                        <a href="signIn.html"> <button class="profile-btn"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="18" height="18" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M11.98 20v-1h6.405q.23 0 .423-.192t.192-.424V5.616q0-.231-.192-.424T18.384 5h-6.403V4h6.404q.69 0 1.152.463T20 5.616v12.769q0 .69-.463 1.153T18.385 20zm-.71-4.461l-.703-.72l2.32-2.319H4.019v-1h8.868l-2.32-2.32l.702-.718L14.808 12z" />
+                                </svg></button></a>
+                        <div class="dropdown">
+                            <a href="login.html">Login</a>
+                            <a href="#">Sign Up</a>
+                        </div>
                     </div>
-                  </div>
-            
-                  
-                  <div class="cart">
-                   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 80 80"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"><path d="M26 49h38l7-28H19m9.95 39.803L17 13H9"/><path d="M26.402 61.499a5.196 5.196 0 1 1 5.196 9a5.196 5.196 0 0 1-5.196-9M30.419 61H60.58m-1.178.499a5.196 5.196 0 1 1 5.196 9a5.196 5.196 0 0 1-5.196-9"/></g></svg>
-                  </div>
-            
+
+
+                    <div class="cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 80 80">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1">
+                                <path d="M26 49h38l7-28H19m9.95 39.803L17 13H9" />
+                                <path
+                                    d="M26.402 61.499a5.196 5.196 0 1 1 5.196 9a5.196 5.196 0 0 1-5.196-9M30.419 61H60.58m-1.178.499a5.196 5.196 0 1 1 5.196 9a5.196 5.196 0 0 1-5.196-9" />
+                            </g>
+                        </svg>
+                    </div>
+
                 </div>
-            
-              </nav>
+
+            </nav>
         </div>
     </section>
 
     <main>
-        
-            <div class="banner1">
-                
-             <div class="heading">
+
+        <div class="banner1">
+
+            <div class="heading">
                 <h1><em>SNEAKERVERS</em></h1>
                 <h4><em>"Where sneakers meet culture"</em></h4>
                 <br>
                 <br>
-                 </div>
+            </div>
 
-                 <div class="btn">
-                <button><p>SHOP NOW</p></button>
-                <button><p>NEW ARRIVALS</p></button>
+            <div class="btn">
+                <button>
+                    <p>SHOP NOW</p>
+                </button>
+                <button><a href="#new arrivals">
+                    <p class="NW">NEW ARRIVALS</p></a>
+                </button>
             </div>
-            </div>
+        </div>
         </section>
         <section>
-             <h4 class="cate"> Who are you shopping for ? </h4>
+            <h4 class="cate"> Who are you shopping for ? </h4>
             <div class="banner">
                 <div class="box1">
-                    <img class="women"    src="images\Wimg15.avif" width="100%" height="100%">
-                 <a href="women.html"><p class="Ctext">WOMEN</p></a> 
+                    <img class="women" src="images\Wimg15.avif" width="100%" height="100%">
+                    <a href="women.html">
+                        <p class="Ctext">WOMEN</p>
+                    </a>
                 </div>
                 <div class="box2">
-                    <img  class="women" src="images\Wimg18.avif" width="100%" height="100%">
-                   <a href="men.html"><p class="Ctext"> MEN</P></a> 
+                    <img class="women" src="images\Wimg18.avif" width="100%" height="100%">
+                    <a href="men.html">
+                        <p class="Ctext"> MEN</P>
+                    </a>
                 </div>
                 <div class="box3">
                     <img class="women" src="images\kids8.avif" width="100%" height="100%">
-                  <a href="kid.html"> <p class="Ctext"> KIDS</p></a>
+                    <a href="kid.html">
+                        <p class="Ctext"> KIDS</p>
+                    </a>
                 </div>
             </div>
-           
+
         </section>
-     <section>
-        <br>
+        <section>
+            <br>
 
-        <div>
-                   <section class="promo-video">
-    <video autoplay muted loop >
-        <source src="images/Mbanner.mp4" type="video/mp4">
-    
-    </video>
-</section>
+            <div>
+                <section class="promo-video">
+                    <video autoplay muted loop>
+                        <source src="images/Mbanner.mp4" type="video/mp4">
 
-<div class="Mbanner">
+                    </video>
+                </section>
 
-  <button  class="btext"><a href="all-product.html">
-        <br>
-        SHOP NOW
-        <br>
-         <br>
-    </a>
-    </button> 
-</div>
-        <h3 class="cate">What's new?</h3>
-             <div class="banner">
-                <div class="box4">
-                    <img src="images\Wimg16.avif" width="100%" height="100%">
-                     <p class="text">Nike P-6000<br>
-                  R 1 699,95
-</p>
-<br>
-<button class="add">Add to Cart</button>
-                </div>
-                <div class="box5">
-                    <img src="images\puma4.avif" width="100%" height="100%">
-                    <p>Arizona Retro Sneakers<br>
-                        R 1 799 
-                   </p>
-                   <br>
-                   <button class="add">Add to Cart</button>
-                </div>
-                <div class="box6">
-                    <img src="images\Fimg1.webp" width="100%" height="100%">
-                    <p  class="text">204L Bungee Lace<br>
-                         R1,399.00</p>
-                         <br>
-        <button class="add">Add to Cart</button> 
-                </div>
-                <div class="box7">
-                    <img src="images\Wimg9.avif" width="100%" height="100%">
-                    <p  class="text">Speedcat Sneakers Women<br>
-                               R 2 599</p>
-                               <br>
-                               <button class="add">Add to Cart</button>
-                </div>
-             </div>
+                <div class="Mbanner">
 
-       </section>
+                    <button class="btext"><a href="all-product.html">
+                            <br>
+                            SHOP NOW
+                            <br>
+                            <br>
+                        </a>
+                    </button>
+                </div>
+                <h3 class="cate">What's new?</h3>
+                <div id="new arrivals"  class="banner">
+                    <div class="box4">
+                        <img src="images\Wimg16.avif" width="100%" height="100%">
+                        <p class="text">Nike P-6000<br>
+                            R 1 699,95
+                        </p>
+                        <br>
+                        <button class="add">Add to Cart</button>
+                    </div>
+                    <div class="box5">
+                        <img src="images\puma4.avif" width="100%" height="100%">
+                        <p>Arizona Retro Sneakers<br>
+                            R 1 799
+                        </p>
+                        <br>
+                        <button class="add">Add to Cart</button>
+                    </div>
+                    <div class="box6">
+                        <img src="images\Fimg1.webp" width="100%" height="100%">
+                        <p class="text">204L Bungee Lace<br>
+                            R1,399.00</p>
+                        <br>
+                        <button class="add">Add to Cart</button>
+                    </div>
+                    <div class="box7">
+                        <img src="images\Wimg9.avif" width="100%" height="100%">
+                        <p class="text">Speedcat Sneakers Women<br>
+                            R 2 599</p>
+                        <br>
+                        <button class="add">Add to Cart</button>
+                    </div>
+                </div>
+
+        </section>
         <br>
         <br>
         </section>
-         <section>
-             <div class="side-container">
-               
+        <section>
+            <div class="side-container">
+
                 <div class="left-side">
-                     <img src="images\banner55.jpg">
+                    <img src="images\banner55.jpg">
                 </div>
                 <div class="right-side">
                     <p>
-                    
+
                         <em><strong>Quality Assurance</strong></em>
                         <br>
                         "Hand-inspected for superior craftsmanship. <br>
                         This footwear is certified to meet our premium standards for durability and comfort."<br>
                         <br>
 
-                        Investing in high-quality footwear is an investment in both your physical well-being and your personal style.<br> Beyond the aesthetic appeal of premium materials like full-grain leather or breathable technical knits,<br> superior craftsmanship ensures a structural integrity that supports your posture and provides lasting comfort throughout. <br>While mass-produced alternatives may offer a temporary trend,<br> well-made shoes are designed to develop a unique patina over time,<br> becoming more comfortable and character-rich with every wear.<br> By choosing quality over quantity, you prioritize durability <br>
-                            and timeless design, ensuring that your foundation is as solid as it is sophisticated</p><br>
+                        Investing in high-quality footwear is an investment in both your physical well-being and your
+                        personal style.<br> Beyond the aesthetic appeal of premium materials like full-grain leather or
+                        breathable technical knits,<br> superior craftsmanship ensures a structural integrity that
+                        supports your posture and provides lasting comfort throughout. <br>While mass-produced
+                        alternatives may offer a temporary trend,<br> well-made shoes are designed to develop a unique
+                        patina over time,<br> becoming more comfortable and character-rich with every wear.<br> By
+                        choosing quality over quantity, you prioritize durability <br>
+                        and timeless design, ensuring that your foundation is as solid as it is sophisticated
+                    </p><br>
                 </div>
-                </div>
-                <div>
-                   <section class="promo-video">
-    <video autoplay muted loop >
-        <source src="images/banner22.mp4" type="video/mp4">
-    
-    </video>
-</section>
-                </div>
-         
-            
-             
-        </section>
-     <section class="footer">
-             <div class="footer-section">  <h3>Shop</h3>
-      <ul>
-        <li><a href="#">All Products</a></li>
-        <li><a href="#">Men</a></li>
-        <li><a href="#">Women</a></li>
-        <li><a href="#">Kids</a></li>
-        <li><a href="#">New Arrivals</a></li>
-      </ul>
-    </div>
-             <div class="footer-section"><h3>Company</h3>
-      <ul>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Terms & Conditions</a></li>
-      </ul>
-    </div>
-             <div class="footer-section"><h3>Connect</h3>
+            </div>
+            <div>
+                <section class="promo-video">
+                    <video autoplay muted loop>
+                        <source src="images/banner22.mp4" type="video/mp4">
 
-      <div class="social-icons">
-        <a href="#">Facebook</a>
-        <a href="#">Instagram</a>
-        <a href="#">Twitter</a>
-    </div>
-             <div class="footer-section">
-                <div class="input">
-                <p>Subscribe to get special offers and updates.</p>
-        <input type="email" placeholder="Your Email">
-        <button class="join">Join</button>
-        </div>
-    </div>
+                    </video>
+                </section>
+            </div>
+
+
+
+        </section>
+        <section class="footer">
+            <div class="footer-section">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="#">All Products</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+
+                <div class="social-icons">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                </div>
+                <div class="footer-section">
+                    <div class="input">
+                        <p>Subscribe to get special offers and updates.</p>
+                        <input type="email" placeholder="Your Email">
+                        <button class="join">Join</button>
+                    </div>
+                </div>
         </section>
 
     </main>
 </body>
+
 </html>
