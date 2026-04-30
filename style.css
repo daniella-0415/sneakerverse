@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-      font-family: 'Garamond', serif
+    font-family: 'Garamond', serif;
  
 }
 
@@ -307,10 +307,10 @@ background-color:whitesmoke;
 }
 
 
-.Ctext{
+.Ctext {
   display: flex;
   justify-content: center;
-  font-size: larger;
+  font-size:700;
   color: #111;
 
 }
@@ -392,6 +392,19 @@ background-color:whitesmoke;
   height: 35%;
   object-fit: cover;
   box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.product-header{
+display: flex;
+justify-content: center;
+
+}
+  
+
+.product-h{
+  display: flex;
+  justify-content: center;
+ 
 }
 
 .shoes {
@@ -552,7 +565,7 @@ background-color:whitesmoke;
   width: 100%;
   padding: 40px 20px 20px;
   /* font-size: 13.5px; */
-  height: 50.7vh; 
+  height: 50.7%; 
 }
 
 
